@@ -11,6 +11,12 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.container {
+    width: 78%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
 /* Header Part Styles */
 header {
     width: 100%;
@@ -56,4 +62,40 @@ header {
     width: 556px;
     height: 438px;
     margin: 67px 0px 80px 0px;
+}
+
+/* Star Player Section Styles */
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+    column-gap: 30px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.151);
+    margin-bottom: 35px;
+}
+
+.player img {
+    width: 300px;
+    height: 256px;
+    margin: 15px auto;
+}
+
+.players .player h3 {
+    color: #18191F;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0px 16px 10px 16px;
+}
+
+.players .player p {
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: justify;
+    margin: 0px 16px 33px 16px;
 }
