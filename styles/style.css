@@ -99,3 +99,66 @@ header {
     text-align: justify;
     margin: 0px 16px 33px 16px;
 }
+
+/* Stadium Styles */
+.stadium-info {
+    display: grid;
+    grid-template-columns: 300px repeat(1, 1fr);
+    align-items: center;
+    column-gap: 10px;
+}
+
+.stadium-title h2 {
+    color: #18191F;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: -35px;
+}
+
+.stadiums {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.stadium {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stadium img {
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.20);
+}
+
+/* Footer styles */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-item {
+    margin-bottom: 20px;
+}
+
+.footer-item img {
+    width: 480px;
+    height: 110px;
+}
+
+.footer-item a {
+    color: #6C6C6C;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0px 15px;
+}
+
+.footer-item p {
+    font-size: 18px;
+}
