@@ -17,6 +17,26 @@ body {
     margin-top: 70px;
 }
 
+h1 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
 /* Header Part Styles */
 header {
     width: 100%;
@@ -40,8 +60,6 @@ header {
     width: 485px;
     margin-top: 121px;
     color: #FFFFFF;
-    font-size: 64px;
-    font-weight: bold;
     line-height: 80px;
 }
 
@@ -87,15 +105,11 @@ header {
 
 .players .player h3 {
     color: #18191F;
-    font-size: 28px;
-    font-weight: bold;
     margin: 0px 16px 10px 16px;
 }
 
 .players .player p {
     color: #6C6C6C;
-    font-size: 16px;
-    font-weight: 500;
     text-align: justify;
     margin: 0px 16px 33px 16px;
 }
@@ -110,8 +124,6 @@ header {
 
 .stadium-title h2 {
     color: #18191F;
-    font-size: 36px;
-    font-weight: bold;
     margin-top: -35px;
 }
 
@@ -136,6 +148,33 @@ header {
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.20);
 }
 
+/* Sponsors Styles */
+.sponsor-title {
+    color: #18191F;
+    text-align: center;
+}
+
+hr {
+    color: #6C6C6C;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.sponsors {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 90px;
+}
+
+.sponsor img {
+    width: 120px;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.20);
+}
+
 /* Footer styles */
 footer {
     display: flex;
@@ -153,12 +192,91 @@ footer {
 }
 
 .footer-item a {
-    color: #6C6C6C;
     text-decoration: none;
     font-size: 24px;
-    padding: 0px 15px;
+    padding: 0 15px;
+    color: #6C6C6C;
 }
 
-.footer-item p {
-    font-size: 18px;
+/* Animation while hovering the image of top-banner */
+.top-banner-img:hover img {
+    animation: top-banner 2s linear 0.5s infinite alternate;
+}
+
+@keyframes top-banner {
+
+    25% {
+        transform: scale(1.1, 1.1);
+    }
+
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+
+    75% {
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+
+/* Responsive Styles using Media Query*/
+
+/* Mobile Device */
+@media only screen and (max-width:600px) {
+    header {
+        width: 100%;
+    }
+
+    .top-banner {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .top-banner h1 {
+        width: 280px;
+        font-size: 36px;
+        line-height: 50px;
+        margin-top: 50px;
+    }
+
+    .top-banner .top-banner-img img {
+        width: 330px;
+        height: 260px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .players,
+    .stadiums {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player {
+        flex-direction: column;
+    }
+
+    .stadium-info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .stadium-title h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .sponsors {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-item img {
+        width: 300px;
+        height: 65px;
+    }
+
 }
