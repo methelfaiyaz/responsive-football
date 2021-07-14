@@ -93,7 +93,7 @@ header {
 .player {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.151);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
     margin-bottom: 35px;
 }
 
@@ -103,15 +103,20 @@ header {
     margin: 15px auto;
 }
 
+.player .player-info {
+    width: 300px;
+    margin: 0px auto;
+}
+
 .players .player h3 {
     color: #18191F;
-    margin: 0px 16px 10px 16px;
+    margin-bottom: 10px;
 }
 
 .players .player p {
     color: #6C6C6C;
     text-align: justify;
-    margin: 0px 16px 33px 16px;
+    margin-bottom: 30px;
 }
 
 /* Stadium Styles */
@@ -250,6 +255,7 @@ footer {
 
     .container {
         width: 90%;
+        margin-top: 50px;
     }
 
     .players,
